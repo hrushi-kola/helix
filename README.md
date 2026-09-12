@@ -1,4 +1,4 @@
-# ✦ Nexus — AI Powered Company Assistant
+# ✦ Nexus - AI Powered Company Assistant
 
 > **Ask your company's knowledge. Get intelligent, context-aware answers.**
 
