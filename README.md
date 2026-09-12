@@ -6,17 +6,17 @@ Nexus is a full-stack, AI-powered enterprise knowledge assistant that lets emplo
 
 Nexus retrieves relevant information from the organization’s knowledge base and uses an LLM to produce a grounded, context-aware answer with supporting sources.
 
-## ✨ Why Nexus?
+## Why Nexus?
 
 Modern organizations accumulate extensive internal information, including:
 
-- 📄 HR policies
-- 🔐 Security guidelines
-- 💻 IT documentation
-- 🏢 Company procedures
-- ✈️ Travel policies
-- 💰 Expense policies
-- 👥 Employee guidelines
+-  HR policies
+-  Security guidelines
+-  IT documentation
+-  Company procedures
+-  Travel policies
+-  Expense policies
+-  Employee guidelines
 
 Traditional document search requires employees to know where information lives and which keywords to use. Nexus changes that interaction model:
 
@@ -25,9 +25,9 @@ Employee → Ask a question → Retrieve relevant knowledge
          → Generate a contextual answer → Show supporting sources
 ```
 
-## 🚀 Core Features
+## Core Features
 
-### 🤖 AI Knowledge Assistant
+### AI Knowledge Assistant
 
 Employees can interact with company knowledge using natural language.
 
@@ -39,7 +39,7 @@ Sources: 01_Annual_Leave_Policy.pdf
 
 Responses are grounded in the organization’s internal knowledge base instead of relying solely on the model’s general knowledge.
 
-### 🔎 Retrieval-Augmented Generation (RAG)
+### Retrieval-Augmented Generation (RAG)
 
 Nexus uses a Retrieval-Augmented Generation architecture:
 
@@ -50,7 +50,7 @@ User question → Query processing → Document retrieval → Relevant chunks
 
 This produces answers based on the organization’s own documents.
 
-### 🧩 Hybrid Knowledge Retrieval
+### Hybrid Knowledge Retrieval
 
 The modular retrieval pipeline supports:
 
@@ -60,7 +60,7 @@ The modular retrieval pipeline supports:
 - Reranking and context construction
 - Citation generation
 
-### 🧠 LLM Integration
+### LLM Integration
 
 Nexus supports multiple LLM providers through a centralized LLM management layer. Current integrations include:
 
@@ -69,7 +69,7 @@ Nexus supports multiple LLM providers through a centralized LLM management layer
 
 The provider layer is separated from the application, making model integrations easy to switch or extend.
 
-### 🔐 Authentication and Authorization
+### Authentication and Authorization
 
 Nexus uses JWT authentication, role-based authorization, and Google Sign-In.
 
@@ -78,7 +78,7 @@ Nexus uses JWT authentication, role-based authorization, and Google Sign-In.
 | Employee | Create an account, sign in, use the AI assistant, access company knowledge, and view conversation history. |
 | Administrator | Access the admin dashboard, upload company documents, manage the knowledge base, and monitor the document ecosystem. |
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```text
 React + Vite UI
@@ -104,7 +104,7 @@ FastAPI Backend API
                             Grounded answer
 ```
 
-## 📚 RAG Pipeline
+## RAG Pipeline
 
 ### Document ingestion
 
@@ -123,7 +123,7 @@ User query → Query processing → Semantic / hybrid retrieval
 
 This separation keeps knowledge retrieval distinct from language generation.
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```text
 Nexus/
@@ -157,7 +157,7 @@ Nexus/
 └── README.md
 ```
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Area | Technology | Purpose |
 | --- | --- | --- |
@@ -178,7 +178,7 @@ Nexus/
 | Database | SQLite | Application data |
 | Database | ChromaDB | Vector storage |
 
-## 🔐 Security
+## Security
 
 Nexus includes the following security mechanisms:
 
@@ -218,7 +218,7 @@ VITE_GOOGLE_CLIENT_ID=your-google-client-id
 
 > Never commit `.env` files or API keys to GitHub.
 
-## 💻 Local Development
+## Local Development
 
 ### 1. Clone the repository
 
@@ -261,7 +261,7 @@ npm run dev
 
 The frontend runs at `http://localhost:5173`.
 
-## 👨‍💼 Admin Workflow
+## Admin Workflow
 
 ```text
 Admin login → Admin dashboard → Upload document → Document processing
@@ -270,14 +270,14 @@ Admin login → Admin dashboard → Upload document → Document processing
 
 Once documents are indexed, employees can query them through the AI assistant.
 
-## 👨‍💻 Employee Workflow
+## Employee Workflow
 
 ```text
 Employee login → Nexus chat → Ask question → Retrieve relevant knowledge
 → Generate answer → Display sources
 ```
 
-## 🧪 Example Queries
+## Example Queries
 
 Once company documents are uploaded, employees can ask questions such as:
 
@@ -291,30 +291,24 @@ Once company documents are uploaded, employees can ask questions such as:
 
 The assistant retrieves relevant company information and generates an answer grounded in the available knowledge base.
 
-## 📈 Design Philosophy
 
-1. **Grounded AI** — Answers should be based on retrieved organizational knowledge.
-2. **Modular architecture** — RAG, LLM, authentication, database, and UI layers are separated for easier extension.
-3. **Enterprise-oriented access** — Different roles receive different capabilities.
-4. **Explainability** — Retrieved sources can accompany generated responses so users can understand where answers originated.
+## Future Improvements
 
-## 🔮 Future Improvements
+-  Production-grade vector database
+-  Persistent cloud storage
+-  Advanced admin analytics
+-  Support for additional document formats
+-  Improved hybrid retrieval
+-  Query classification
+-  Streaming LLM responses
+-  Enterprise user management
+-  Retrieval and answer evaluation
+-  Document versioning
+-  Metadata-based filtering
+-  More granular permissions
+-  RAG observability and monitoring
 
-- 🌐 Production-grade vector database
-- ☁️ Persistent cloud storage
-- 📊 Advanced admin analytics
-- 📑 Support for additional document formats
-- 🔍 Improved hybrid retrieval
-- 🧠 Query classification
-- ⚡ Streaming LLM responses
-- 👥 Enterprise user management
-- 📈 Retrieval and answer evaluation
-- 🗃️ Document versioning
-- 🏷️ Metadata-based filtering
-- 🔐 More granular permissions
-- 📊 RAG observability and monitoring
-
-## 🚀 Deployment
+##  Deployment
 
 Nexus can be deployed as two services:
 
@@ -334,24 +328,14 @@ GitHub
 
 For production, configure all required environment variables in the hosting platform rather than committing secrets to the repository.
 
-## 📸 Application
+## Application
 
 - **Employee Chat:** A conversational interface for interacting with company knowledge.
 - **Admin Dashboard:** A workspace for managing the organization’s knowledge base and uploading documents.
 - **Document Management:** Uploaded documents are processed and indexed for retrieval.
 
-## 🎯 Project Goal
 
-Nexus demonstrates how modern AI technologies can form a practical enterprise application:
-
-```text
-Artificial Intelligence + Large Language Models + Retrieval-Augmented Generation
-+ Vector Search + Semantic Embeddings + FastAPI + React + Authentication = Nexus
-```
-
-Nexus transforms static company documentation into an interactive organizational knowledge system.
-
-## 👤 Author
+## Author
 
 **Sai Hrushita Kolachina**
 
