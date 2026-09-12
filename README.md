@@ -26,7 +26,7 @@ Employee → Ask a question → Retrieve relevant knowledge → Generate a conte
 
 ## Core Features
 
-### AI Knowledge Assistant
+### (a) AI Knowledge Assistant
 
 Employees can interact with company knowledge using natural language.
 
@@ -38,7 +38,7 @@ Sources: 01_Annual_Leave_Policy.pdf
 
 Responses are grounded in the organization’s internal knowledge base instead of relying solely on the model’s general knowledge.
 
-### Retrieval-Augmented Generation (RAG)
+### (b) Retrieval-Augmented Generation (RAG)
 
 Nexus uses a Retrieval-Augmented Generation architecture:
 
@@ -49,7 +49,7 @@ User question → Query processing → Document retrieval → Relevant chunks
 
 This produces answers based on the organization’s own documents.
 
-### Hybrid Knowledge Retrieval
+### (c) Hybrid Knowledge Retrieval
 
 The modular retrieval pipeline supports:
 
@@ -59,7 +59,7 @@ The modular retrieval pipeline supports:
 - Reranking and context construction
 - Citation generation
 
-### LLM Integration
+### (d) LLM Integration
 
 Nexus supports multiple LLM providers through a centralized LLM management layer. Current integrations include:
 
@@ -68,7 +68,7 @@ Nexus supports multiple LLM providers through a centralized LLM management layer
 
 The provider layer is separated from the application, making model integrations easy to switch or extend.
 
-### Authentication and Authorization
+### (e) Authentication and Authorization
 
 Nexus uses JWT authentication, role-based authorization, and Google Sign-In.
 
