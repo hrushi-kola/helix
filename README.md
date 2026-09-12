@@ -92,8 +92,7 @@ FastAPI Backend API
                               RAG engine
                                     │
                          Retrieval pipeline
-                  (chunking, embeddings, hybrid search,
-                   reranking, and context building)
+   (chunking, embeddings, hybrid search, reranking, and context building)
                                     │
                                  ChromaDB
                                     │
@@ -105,14 +104,14 @@ FastAPI Backend API
 
 ## RAG Pipeline
 
-### Document ingestion
+### (a) Document ingestion
 
 ```text
 Company document → Document loader → Text extraction → Text chunking
 → Embedding generation → Vector storage → ChromaDB
 ```
 
-### Question answering
+### (b) Question answering
 
 ```text
 User query → Query processing → Semantic / hybrid retrieval
@@ -122,39 +121,6 @@ User query → Query processing → Semantic / hybrid retrieval
 
 This separation keeps knowledge retrieval distinct from language generation.
 
-##  Project Structure
-
-```text
-Nexus/
-├── backend/
-│   ├── app/
-│   │   ├── api/              # auth, chat, documents, health, history
-│   │   ├── database/         # ChromaDB and SQLite access
-│   │   ├── llm/              # Gemini, Groq, and LLM manager
-│   │   ├── models/           # request and response models
-│   │   ├── rag/              # retrieval and ingestion pipeline
-│   │   ├── utils/            # authentication and citations
-│   │   ├── config.py
-│   │   └── main.py
-│   ├── sample_documents/
-│   ├── requirements.txt
-│   └── .env
-├── frontend/
-│   ├── public/
-│   │   └── nexus.svg
-│   ├── src/
-│   │   ├── components/       # chat, sources, sidebar, upload UI
-│   │   ├── context/          # AuthContext and ChatContext
-│   │   ├── pages/            # admin, authentication, chat, documents
-│   │   ├── services/         # API client
-│   │   ├── styles/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── package.json
-│   └── vite.config.js
-├── .gitignore
-└── README.md
-```
 
 ## Technology Stack
 
