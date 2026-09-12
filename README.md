@@ -21,8 +21,7 @@ Modern organizations accumulate extensive internal information, including:
 Traditional document search requires employees to know where information lives and which keywords to use. Nexus changes that interaction model:
 
 ```text
-Employee → Ask a question → Retrieve relevant knowledge
-         → Generate a contextual answer → Show supporting sources
+Employee → Ask a question → Retrieve relevant knowledge → Generate a contextual answer → Show supporting sources
 ```
 
 ## Core Features
