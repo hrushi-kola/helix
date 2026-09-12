@@ -43,7 +43,8 @@ Responses are grounded in the organization’s internal knowledge base instead o
 Nexus uses a Retrieval-Augmented Generation architecture:
 
 ```text
-User question → Query processing → Document retrieval → Relevant chunks → Reranking → Context construction → LLM → Grounded answer → Source citations
+User question → Query processing → Document retrieval → Relevant chunks → Reranking → Context construction → LLM
+→ Grounded answer → Source citations
 ```
 
 This produces answers based on the organization’s own documents.
