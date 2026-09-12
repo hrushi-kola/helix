@@ -2,7 +2,7 @@
 
 > **Ask your company's knowledge. Get intelligent, context-aware answers.**
 
-Nexus is a full-stack, AI-powered enterprise knowledge assistant that lets employees interact with internal company documents in natural language. Rather than searching through policies, guides, and internal documentation manually, employees can ask questions such as: *“What is the annual leave policy?”*
+Nexus is a full-stack, AI-powered knowledge assistant that lets employees interact with internal company documents in natural language. Rather than searching through policies, guides, and internal documentation manually, employees can ask questions such as: *“What is the annual leave policy?”*
 
 Nexus retrieves relevant information from the organization’s knowledge base and uses an LLM to produce a grounded, context-aware answer with supporting sources.
 
