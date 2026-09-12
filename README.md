@@ -356,23 +356,7 @@ Environment variables are configured separately for local development and produc
 
 ---
 
-## 13. Production Debugging Experience
-
-### Key real-world issues addressed
-
-- JSON payload structure errors
-- Runtime crashes
-- API integration issues
-- CORS configuration problems
-- AI-provider quota issues and fallback handling
-- Document-processing issues
-- Frontend–backend communication issues
-- Environment configuration and deployment issues
-- Booking and payment integration issues
-
----
-
-## 14. Security Measures
+## 13. Security Measures
 
 - JWT-based authentication
 - Protected admin routes
@@ -386,7 +370,7 @@ Environment variables are configured separately for local development and produc
 
 ---
 
-## 15. Deployment
+## 14. Deployment
 
 - Frontend → Vercel
 - Backend → Render
@@ -400,7 +384,7 @@ VITE_BACKEND_URL=https://your-live-backend-url
 
 ---
 
-## 16. AI Provider Architecture
+## 15. AI Provider Architecture
 
 ### Why use a provider abstraction layer?
 
@@ -415,23 +399,8 @@ The AI provider layer keeps the core chatbot logic independent from Gemini, Open
 
 ---
 
-## 17. Learning Outcomes
 
-### This project strengthened understanding of:
-
-- AI and full-stack web integration
-- Large Language Model integration
-- Conversational AI architecture
-- AI-provider abstraction and fallback systems
-- Document processing and AI-assisted understanding
-- Secure API design
-- Distributed systems
-- Payment gateway integration
-- Cloud deployment and production debugging workflows
-
----
-
-## 18. Future Enhancements
+## 16. Future Enhancements
 
 - Multi-Factor Authentication (MFA)
 - Doctor ratings and reviews
@@ -443,17 +412,17 @@ The AI provider layer keeps the core chatbot logic independent from Gemini, Open
 
 ---
 
-## 19. Final Notes
+## 17. Final Notes
 
 - MedCare demonstrates how AI systems and modern web technologies can be responsibly integrated into a healthcare platform.
 - Healio provides conversational AI assistance while professional doctor consultation remains an important part of the healthcare workflow.
 - The platform emphasizes clean architecture, secure APIs, reliable service integration, and real-world engineering practices.
 - AI-generated information is intended for assistance and education and should not replace professional medical advice.
-- © 2026 – MedCare
+- © 2025 – MedCare
 
 ---
 
-## 20. Author
+## 18. Author
 
 - Sai Hrushita Kolachina
 
