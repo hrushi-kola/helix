@@ -160,17 +160,37 @@ Nexus includes the following security mechanisms:
 Store sensitive configuration in `backend/.env`:
 
 ```dotenv
-ADMIN_EMAIL=your-admin-email
-ADMIN_PASSWORD=your-admin-password
-
-JWT_SECRET_KEY=your-secret-key
-JWT_ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=60
+BACKEND_PORT = 4000
+JWT_SECRET_KEY = your-secret-key
+JWT_ALGORITHM = HS256
+ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
 GOOGLE_CLIENT_ID=your-google-client-id
 
+ADMIN_EMAIL=your-admin-email
+ADMIN_PASSWORD=your-admin-password
+
 GEMINI_API_KEY=your-gemini-key
 GROQ_API_KEY=your-groq-key
+
+GEMINI_MODEL=gemini-3.5-flash-lite 
+GROQ_MODEL=openai/gpt-oss-20b
+
+EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+
+CHROMA_PERSIST_DIRECTORY=./data/chroma
+CHROMA_COLLECTION_NAME=company_knowledge
+
+CHUNK_SIZE=800
+CHUNK_OVERLAP=120
+
+TOP_K=8
+FINAL_K=5
+MIN_RELEVANCE_SCORE=0.30
+
+SQLITE_DATABASE=./data/company_ai.db
+
+VITE_FRONTEND_URL=your-frontend-url
 ```
 
 Create `frontend/.env` as well:
