@@ -6,7 +6,7 @@ Nexus is a full-stack, AI-powered enterprise knowledge assistant that lets emplo
 
 Nexus retrieves relevant information from the organization’s knowledge base and uses an LLM to produce a grounded, context-aware answer with supporting sources.
 
-## Why Nexus?
+## 1. Why Nexus?
 
 Modern organizations accumulate extensive internal information, including:
 
@@ -24,7 +24,7 @@ Traditional document search requires employees to know where information lives a
 Employee → Ask a question → Retrieve relevant knowledge → Generate a contextual answer → Show supporting sources
 ```
 
-## Core Features
+## 2. Core Features
 
 ### (a) AI Knowledge Assistant
 
@@ -77,7 +77,7 @@ Nexus uses JWT authentication, role-based authorization, and Google Sign-In.
 | Employee | Create an account, sign in, use the AI assistant, access company knowledge, and view conversation history. |
 | Administrator | Access the admin dashboard, upload company documents, manage the knowledge base, and monitor the document ecosystem. |
 
-## System Architecture
+## 3. System Architecture
 
 ```text
 React + Vite UI
@@ -102,7 +102,7 @@ FastAPI Backend API
                             Grounded answer
 ```
 
-## RAG Pipeline
+## 4. RAG Pipeline
 
 ### (a) Document ingestion
 
@@ -120,7 +120,7 @@ User query → Query processing → Semantic / hybrid retrieval → Candidate do
 This separation keeps knowledge retrieval distinct from language generation.
 
 
-## Technology Stack
+## 5. Technology Stack
 
 | Area | Technology | Purpose |
 | --- | --- | --- |
@@ -142,7 +142,7 @@ This separation keeps knowledge retrieval distinct from language generation.
 | Database | ChromaDB | Vector storage |
 
 
-## Security
+## 6. Security
 
 Nexus includes the following security mechanisms:
 
@@ -202,16 +202,16 @@ VITE_GOOGLE_CLIENT_ID=your-google-client-id
 
 > Never commit `.env` files or API keys to GitHub.
 
-## Local Development
+## 7. Local Development
 
-### 1. Clone the repository
+### (a) Clone the repository
 
 ```bash
 git clone https://github.com/sai-hrushita-kolachina/Nexus.git
 cd Nexus
 ```
 
-### 2. Set up the backend
+### (b) Set up the backend
 
 ```bash
 cd backend
@@ -233,7 +233,7 @@ uvicorn app.main:app --reload --port 4000
 
 The backend runs at `http://localhost:4000`.
 
-### 3. Set up the frontend
+### (c) Set up the frontend
 
 In another terminal:
 
@@ -245,7 +245,7 @@ npm run dev
 
 The frontend runs at `http://localhost:5173`.
 
-## Admin Workflow
+## 8. Admin Workflow
 
 ```text
 Admin login → Admin dashboard → Upload document → Document processing → Text extraction → Chunking
@@ -254,13 +254,13 @@ Admin login → Admin dashboard → Upload document → Document processing → 
 
 Once documents are indexed, employees can query them through the AI assistant.
 
-## Employee Workflow
+## 9. Employee Workflow
 
 ```text
 Employee login → Nexus chat → Ask question → Retrieve relevant knowledge → Generate answer → Display sources
 ```
 
-## Example Queries
+## 10. Example Queries
 
 Once company documents are uploaded, employees can ask questions such as:
 
@@ -275,7 +275,7 @@ Once company documents are uploaded, employees can ask questions such as:
 The assistant retrieves relevant company information and generates an answer grounded in the available knowledge base.
 
 
-## Future Improvements
+## 11. Future Improvements
 
 -  Production-grade vector database
 -  Persistent cloud storage
@@ -291,34 +291,25 @@ The assistant retrieves relevant company information and generates an answer gro
 -  More granular permissions
 -  RAG observability and monitoring
 
-##  Deployment
+##  12. Deployment
 
 Nexus can be deployed as two services:
 
 ```text
-GitHub
-  ├── Vercel  → Frontend (React)
-  └── Render  → Backend (FastAPI)
-                       │
-                  Nexus API
-                 ┌─────┴─────┐
-              ChromaDB     SQLite
-                 │
-             RAG engine
-                 │
-           Gemini / Groq
+Vercel  → Frontend (React)
+Render  → Backend (FastAPI)
 ```
 
 For production, configure all required environment variables in the hosting platform rather than committing secrets to the repository.
 
-## Application
+## 13. Application
 
 - **Employee Chat:** A conversational interface for interacting with company knowledge.
 - **Admin Dashboard:** A workspace for managing the organization’s knowledge base and uploading documents.
 - **Document Management:** Uploaded documents are processed and indexed for retrieval.
 
 
-## Author
+## 14. Author
 
 **Sai Hrushita Kolachina**
 
