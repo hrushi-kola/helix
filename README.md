@@ -107,15 +107,13 @@ FastAPI Backend API
 ### (a) Document ingestion
 
 ```text
-Company document → Document loader → Text extraction → Text chunking
-→ Embedding generation → Vector storage → ChromaDB
+Company document → Document loader → Text extraction → Text chunking → Embedding generation → Vector storage → ChromaDB
 ```
 
 ### (b) Question answering
 
 ```text
-User query → Query processing → Semantic / hybrid retrieval
-→ Candidate documents → Reranking → Top relevant context
+User query → Query processing → Semantic / hybrid retrieval → Candidate documents → Reranking → Top relevant context
 → Prompt construction → LLM → Final answer
 ```
 
@@ -142,6 +140,7 @@ This separation keeps knowledge retrieval distinct from language generation.
 | AI / RAG | ChromaDB | Vector database |
 | Database | SQLite | Application data |
 | Database | ChromaDB | Vector storage |
+
 
 ## Security
 
