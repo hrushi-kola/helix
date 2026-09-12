@@ -248,8 +248,8 @@ The frontend runs at `http://localhost:5173`.
 ## Admin Workflow
 
 ```text
-Admin login → Admin dashboard → Upload document → Document processing
-→ Text extraction → Chunking → Embeddings → Vector database → Available for RAG
+Admin login → Admin dashboard → Upload document → Document processing → Text extraction → Chunking
+ → Embeddings → Vector database → Available for RAG
 ```
 
 Once documents are indexed, employees can query them through the AI assistant.
@@ -257,8 +257,7 @@ Once documents are indexed, employees can query them through the AI assistant.
 ## Employee Workflow
 
 ```text
-Employee login → Nexus chat → Ask question → Retrieve relevant knowledge
-→ Generate answer → Display sources
+Employee login → Nexus chat → Ask question → Retrieve relevant knowledge → Generate answer → Display sources
 ```
 
 ## Example Queries
